@@ -12,7 +12,7 @@
         <!-- (WIP) Turkish localization made by Carbneth: https://github.com/Carbneth -->
         <!-- Portuguese localization made by NomadRomeo: https://github.com/NomadRomeo -->
         <Key ID="STR_MISSION_TITLE">
-            <Original>CTI 34 KP Liberation v0.96.4</Original>
+            <Original>KP Liberation (UNITAF Custom)</Original>
         </Key>
         <Key ID="STR_MISSION_VERSION">
             <Original>v0.96.4</Original>
@@ -260,16 +260,16 @@
             <Portuguese>Esta posição é válida.</Portuguese>
         </Key>
         <Key ID="STR_ARSENAL_ACTION">
-            <Original>-- ARSENAL --</Original>
-            <French>-- ARSENAL --</French>
-            <German>-- ARSENAL --</German>
-            <Spanish>-- ARSENAL --</Spanish>
-            <Russian>-- АРСЕНАЛ --</Russian>
-            <Italian>-- ARSENALE --</Italian>
+            <Original>-- KP Loadouts --</Original>
+            <French>-- KP Loadouts --</French>
+            <German>-- KP Loadouts --</German>
+            <Spanish>-- KP Loadouts --</Spanish>
+            <Russian>-- KP Loadouts --</Russian>
+            <Italian>-- KP Loadouts --</Italian>
             <Chinesesimp>-- 军火库 --</Chinesesimp>
             <Chinese>-- 軍火庫 --</Chinese>
             <Turkish>-- CEPHANE --</Turkish>
-            <Portuguese>-- ARSENAL --</Portuguese>
+            <Portuguese>-- KP Loadouts --</Portuguese>
         </Key>
         <Key ID="STR_ACTION_LOAD_BOX">
             <Original>-- LOAD CRATE</Original>
@@ -4260,15 +4260,15 @@
 
         <!-- Added or changed in v0.95 -->
         <Key ID="STR_INDIV_FLAG">
-            <Original>Killah Potatoes flag</Original>
-            <German>Killah Potatoes Flagge</German>
-            <Spanish>Bandera de Killah Potatoes</Spanish>
-            <Russian>КР флаг</Russian>
-            <Italian>Bandiera dei Killah Potatoes</Italian>
-            <Chinesesimp>Killah Potatoes旗</Chinesesimp>
-            <Chinese>Killah Potatoes旗</Chinese>
-            <Turkish>Killah Potatoes bayrağı</Turkish>
-            <Portuguese>Bandeira da Killah Potatoes</Portuguese>
+            <Original>UNITAF flag</Original>
+            <German>UNITAF Flagge</German>
+            <Spanish>Bandera de UNITAF</Spanish>
+            <Russian>UNITAF флаг</Russian>
+            <Italian>Bandiera dei UNITAF</Italian>
+            <Chinesesimp>UNITAF旗</Chinesesimp>
+            <Chinese>UNITAF旗</Chinese>
+            <Turkish>UNITAF bayrağı</Turkish>
+            <Portuguese>Bandeira da UNITAF</Portuguese>
         </Key>
         <Key ID="STR_SMALL_STORAGE">
             <Original>Small storage area</Original>
@@ -6746,6 +6746,18 @@
             <Original>ACE arsenal</Original>
             <German>ACE Arsenal</German>
             <Italian>ACE Arsenale</Italian>
+        </Key>
+		<Key ID="STR_ARSENAL_BUTTS">
+            <Original>-- ACE Arsenal --</Original>
+            <French>-- ACE Arsenal --</French>
+            <German>-- ACE Arsenal --</German>
+            <Spanish>-- ACE Arsenal --</Spanish>
+            <Russian>-- ACE Arsenal --</Russian>
+            <Italian>-- ACE Arsenal --</Italian>
+            <Chinesesimp>-- 军火库 --</Chinesesimp>
+            <Chinese>-- 軍火庫 --</Chinese>
+            <Turkish>-- CEPHANE --</Turkish>
+            <Portuguese>-- ACE Arsenal --</Portuguese>
         </Key>
     </Package>
 </Project>

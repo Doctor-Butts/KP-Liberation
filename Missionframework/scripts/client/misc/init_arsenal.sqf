@@ -64,7 +64,7 @@ if (KP_liberation_arsenalUsePreset) then {
 		[missionNamespace, GRLIB_arsenal_backpacks] call BIS_fnc_addVirtualBackpackCargo;
 		KP_liberation_allowed_items append GRLIB_arsenal_backpacks;
 	};
-
+	
 	{
 		if ((_x find "rhs_acc") == 0) then {
 			KP_liberation_allowed_items_extension append [_x + "_3d", _x + "_pip"];
@@ -73,6 +73,7 @@ if (KP_liberation_arsenalUsePreset) then {
 			KP_liberation_allowed_items_extension append [_x + "_3d", _x + "_pip"];
 		};
 	} forEach KP_liberation_allowed_items;
+	
 
 	if ((count KP_liberation_allowed_items_extension) > 0) then {
 		KP_liberation_allowed_items append KP_liberation_allowed_items_extension;
@@ -81,6 +82,10 @@ if (KP_liberation_arsenalUsePreset) then {
     if (KP_liberation_ace && KP_liberation_arsenal_type) then {
         [player, KP_liberation_allowed_items, false] call ace_arsenal_fnc_addVirtualItems;
     };
+
+	if ((getPlayerUID player) in arsenal_whitelist_1) then {
+			[player, whitelist_1, false] call ace_arsenal_fnc_addVirtualItems;
+		};
 
     // Lowercase all classnames
 	KP_liberation_allowed_items = KP_liberation_allowed_items apply {toLower _x};
@@ -94,3 +99,7 @@ if (KP_liberation_arsenalUsePreset) then {
         [player, true, false] call ace_arsenal_fnc_addVirtualItems;
     };
 };
+
+	if ((getPlayerUID player) in arsenal_whitelist_1) then {
+			[player, whitelist_1, false] call ace_arsenal_fnc_addVirtualItems;
+		};

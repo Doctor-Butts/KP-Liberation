@@ -2,17 +2,18 @@ respawn = 3;
 respawndelay = 5;
 respawnButton = 1;
 disabledAI = true;
+cba_settings_hasSettingsFile = 1;
 
 enableDebugConsole = 1;
 allowFunctionsLog = 0;
 
 briefingName = $STR_MISSION_TITLE;
 overviewText = "www.killahpotatoes.de";
-overviewPicture = "res\lib.paa";
-author = "[GREUH] Zbug, [GREUH] McKeewa, [KP] Wyqer";
+overviewPicture = "res\libb.paa";
+author = "Zbug,McKeewa,Wyqer. Mod by Doctor Butts";
 onLoadName = $STR_MISSION_TITLE;
-onLoadMission = "www.killahpotatoes.de";
-loadScreen = "res\lib.paa";
+onLoadMission = "unitedtaskforce.net";
+loadScreen = "res\libb.paa";
 
 joinUnassigned = 1;
 

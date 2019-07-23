@@ -9,6 +9,7 @@ if (isDedicated) then {debug_source = "Server";} else {debug_source = name playe
 [] call compileFinal preprocessFileLineNumbers "presets\init_presets.sqf";
 [] call compileFinal preprocessFileLineNumbers "kp_objectInits.sqf";
 
+
 [] execVM "GREUH\scripts\GREUH_activate.sqf";
 
 [] call compileFinal preprocessFileLineNumbers "scripts\shared\init_shared.sqf";
@@ -33,3 +34,12 @@ if (!isDedicated && hasInterface) then {
 if ((isNil {player getVariable "bis_revive_ehHandleHeal"} || isDedicated) && !(bis_reviveParam_mode == 0)) then {
     [] call bis_fnc_reviveInit;
 };
+
+//butts stuff
+[] call compileFinal preprocessFileLineNumbers "butts\defaultloadouts.sqf";
+[west, 20, [["Land_Cluttercutter_large_F", 2], ["Land_BagFence_Long_F", 4],["Land_BagBunker_Small_F", 8]]] call acex_fortify_fnc_registerObjects;
+
+KP_liberation_logistic_whitelist = [
+    "76561197968221800"];
+	
+arsenal_whitelist_1 = ["76561197968221800"];

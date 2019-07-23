@@ -72,7 +72,7 @@ KP_liberation_preset_blufor = 0;
 9  = Germany West Winter (Global Mobilization)
 10 = Germany East (Global Mobilization)
 11 = Germany East Winter (Global Mobilization) */
-KP_liberation_preset_opfor = 0;
+KP_liberation_preset_opfor = 2;
 
 /* Resistance preset:
 0 = Custom (default vanilla FIA)
@@ -81,7 +81,7 @@ KP_liberation_preset_opfor = 0;
 3 = Project OPFOR (Middle Eastern)
 4 = Project OPFOR (Sahrani)
 5 = Germany (Global Mobilization) */
-KP_liberation_preset_resistance = 0;
+KP_liberation_preset_resistance = 2;
 
 /* Civilians preset:
 0 = Custom (default vanilla)
@@ -102,15 +102,15 @@ KP_liberation_preset_civilians = 0;
 7 = GM West arsenal preset.
 8 = GM East arsenal preset.
 9 = CSAT arsenal preset. */
-KP_liberation_arsenal = 0;
+KP_liberation_arsenal = 1;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine.	*/
-KP_liberation_fuel_neutral = 180;
+KP_liberation_fuel_neutral = 200;
 // Time in minutes till a full tank depletes whilst the vehicle is driving below max speed.
-KP_liberation_fuel_normal = 90;
+KP_liberation_fuel_normal = 120;
 // Time in minutes till a full tank depletes whilst the vehicle is driving at max speed.
-KP_liberation_fuel_max = 45;
+KP_liberation_fuel_max = 90;
 
 /* - Gameplay constant settings.
 Name of the savegame namespace inside of the [ServerProfileName].vars.Arma3Profile file.	*/
@@ -130,7 +130,7 @@ GRLIB_fob_range = 125;																							// Build range around the main FOB 
 GRLIB_halo_altitude = 2500;																						// Altitude in metres for the HALO jump.
 GRLIB_secondary_missions_costs = [15, 10, 8];																	// Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
 GRLIB_secondary_objective_impact = 0.6;																			// The percentage impact against enemy combat readiness for a successful FOB hunt.
-GRLIB_recycling_percentage = 0.5;																				// Percentage of resources you get back from recycling.
+GRLIB_recycling_percentage = 0.8;																				// Percentage of resources you get back from recycling.
 KP_liberation_production_interval = 30				/ GRLIB_resources_multiplier;								// Time in minutes until a production process is finished, when resources multiplier is set to 1.
 
 GRLIB_sector_size = 1000;																						// Range to activate a sector.
@@ -141,7 +141,7 @@ GRLIB_vulnerability_timer = 1200;																				// Time in seconds how long
 GRLIB_radiotower_size = 2500;																					// Radio Tower scanning range.
 GRLIB_surrender_chance = 80;																					// Chance that enemy infantry will surrender after heavy losses are encountered.
 
-GRLIB_civilians_amount = 10 						* GRLIB_civilian_activity;									// Civilian count multiplier.
+GRLIB_civilians_amount = 20 						* GRLIB_civilian_activity;									// Civilian count multiplier.
 GRLIB_cleanup_delay = 1200;																						// Time in seconds until bodies of dead soldiers are cleaned up.
 
 GRLIB_blufor_cap = 100								* GRLIB_unitcap;											// Cap for BLUFOR.
@@ -155,7 +155,7 @@ KP_liberation_cr_vehicle_penalty = 2;																			// Civil Reputation pena
 KP_liberation_cr_resistance_penalty = 3;																		// Civil Reputation penalty for killing a friendly resistance soldier.
 KP_liberation_cr_sector_gain = 5;																				// Civil Reputation gain for liberate a sector.
 KP_liberation_cr_wounded_chance = 35;																			// Chance (0-100) that there are wounded civilians right after capturing a sector.
-KP_liberation_cr_wounded_gain = 2;																				// Civil Reputation gain for providing medical assistance for wounded civilians.
+KP_liberation_cr_wounded_gain = 3;																				// Civil Reputation gain for providing medical assistance for wounded civilians.
 
 KP_liberation_civinfo_min = 5400;																				// Civil Informant minimum spawn time. (seconds)
 KP_liberation_civinfo_max = 10800;																				// Civil Informant maximum spawn time. (seconds)
@@ -272,7 +272,7 @@ blacklisted_from_arsenal = [
 ];
 
 // Items which should be added as allowed Items, when they get blacklisted, even if they are not in the blacklisted_from_arsenal array
-KP_liberation_allowed_items_extension = [
+KP_liberation_allowed_items_extension = [/* 
 	"ItemRadioAcreFlagged",
 	"rhs_acc_ekp8_18b",
 	"rhs_acc_ekp8_18c",
@@ -378,7 +378,7 @@ KP_liberation_allowed_items_extension = [
 	"ACE_PreloadedMissileDummy_CUP",
 	"ACE_PreloadedMissileDummy_M72A6_CUP",
 	"ACE_PreloadedMissileDummy_NLAW_CUP",
-	"ACE_PreloadedMissileDummy_RPG18_CUP"
+	"ACE_PreloadedMissileDummy_RPG18_CUP" */
 ];
 
 /* - Configuration settings for crates transported by vehicles.

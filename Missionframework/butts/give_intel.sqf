@@ -1,0 +1,1 @@
+resources_intel = resources_intel + 10;

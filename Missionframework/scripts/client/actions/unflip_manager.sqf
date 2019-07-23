@@ -10,7 +10,7 @@ while { true } do {
 		_detected_vehicles = ((getpos player) nearEntities [["Tank","APC","IFV","Car"], veh_action_distance]) select {
             (count crew _x) == 0 &&
             ((locked _x == 0 || locked _x == 1)) &&
-            (_x distance startbase > 1000)
+            (_x distance startbase > 10)
         };
 
 		{

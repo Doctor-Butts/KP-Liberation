@@ -77,4 +77,13 @@ execVM "scripts\client\ui\intro.sqf";
 
 [] execVM "onPlayerRespawn.sqf";
 
+	if ((getPlayerUID player) in arsenal_whitelist_1) then {
+			[player, whitelist_1, false] call ace_arsenal_fnc_addVirtualItems;
+		};
+
 [player] joinSilent (createGroup [GRLIB_side_friendly, true]);
+
+
+
+//butts
+//execVM "butts\butts_actions.sqf";

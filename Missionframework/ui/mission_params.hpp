@@ -88,7 +88,7 @@ class Params
 		title = $STR_SHORTER_NIGHTS_PARAM;
 		values[] = {1,0};
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 0;
+		default = 1;
 	};
 	class Weather {
 		title = $STR_WEATHER_PARAM;
@@ -106,7 +106,7 @@ class Params
 		title = $STR_PARAMS_ARSENAL;
 		values[] = {0, 1};
 		texts[] = {$STR_PARAMS_ARSENAL_BI, $STR_PARAMS_ARSENAL_ACE};
-		default = "0";
+		default = 1;
 	};
 	class Spacer1 {
 		title = "";
@@ -136,7 +136,7 @@ class Params
 		title = $STR_A3_RequiredTrait;
 		values[] = {0,1};
 		texts[] = {$STR_A3_None,$STR_A3_Medic};
-		default = 1;
+		default = 0;
 	};
 	class ReviveMedicSpeedMultiplier {
 		title = $STR_A3_RequiredTrait_MedicSpeedMultiplier;
@@ -148,7 +148,7 @@ class Params
 		title = $STR_A3_RequiredItems;
 		values[] = {0,1,2};
 		texts[] = {$STR_A3_None,$STR_A3_Medikit,$STR_A3_FirstAidKitOrMedikit};
-		default = 1;
+		default = 0;
 	};
 	class UnconsciousStateMode {
 		title = $STR_A3_IncapacitationMode;
@@ -208,7 +208,7 @@ class Params
 		title = $STR_PARAM_RESPAWN_COOLDOWN;
 		values[] = {0, 300, 600, 900, 1200, 1800, 3600};
 		texts[] = {$STR_PARAMS_DISABLED, 5, 10, 15, 20, 30, 60};
-		default = 900;
+		default = 300;
 	};
 	class MobileArsenal {
 		title = $STR_PARAMS_MOBILEARSENAL;
@@ -238,13 +238,13 @@ class Params
 		title = $STR_HALO_PARAM;
 		values[] = {1,5,10,15,20,30,0};
 		texts[] = { $STR_HALO_PARAM1, $STR_HALO_PARAM2, $STR_HALO_PARAM3, $STR_HALO_PARAM4, $STR_HALO_PARAM5, $STR_HALO_PARAM6, $STR_PARAMS_DISABLED };
-		default = 0;
+		default = 10;
 	};
 	class ClearCargo {
 		title = $STR_PARAM_CLEAR_CARGO;
 		values[] = {1,0};
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 1;
+		default = 0;
 	};
 	class Spacer3 {
 		title = "";
@@ -274,7 +274,7 @@ class Params
 		title = $STR_PARAMS_INTRO;
 		values[] = { 1, 0 };
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 1;
+		default = 0;
 	};
 	class DeploymentCinematic {
 		title = $STR_PARAMS_DEPLOYMENTCAMERA;

@@ -1,0 +1,1 @@
+KP_liberation_civ_rep = KP_liberation_civ_rep + 10;

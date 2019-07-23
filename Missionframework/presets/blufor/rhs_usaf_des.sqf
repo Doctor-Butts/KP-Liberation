@@ -341,12 +341,8 @@ elite_vehicles = [
 	"B_UAV_02_dynamicLoadout_F",										//MQ-4A Greyhawk
 	"B_T_UAV_03_dynamicLoadout_F",										//MQ-12 Falcon
 	"B_UAV_05_F",														//UCAV Sentinel
-	"RHS_A10",															//A-10A (CAS)
-	"FIR_F15C",															//F-15C Eagle
-	"FIR_F15D",															//F-15D Eagle
-	"FIR_F15E",															//F-15E Strike Eagle
-	"JS_JC_FA18E",														//F/A-18 E Super Hornet
-	"JS_JC_FA18F",														//F/A-18 F Super Hornet
+	"rhsusf_f22",
+	"B_Plane_CAS_01_dynamicLoadout_F",															//A-10A (CAS)
 	"B_Plane_Fighter_01_F",												//F/A-181 Black Wasp II
 	"B_Plane_Fighter_01_Stealth_F",										//F/A-181 Black Wasp II (Stealth)
 	"B_T_VTOL_01_armed_F"												//V-44 X Blackfish (Armed)
