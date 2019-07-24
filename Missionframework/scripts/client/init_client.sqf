@@ -12,6 +12,11 @@ switch (KP_liberation_arsenal) do {
 	default {GRLIB_arsenal_weapons = [];GRLIB_arsenal_magazines = [];GRLIB_arsenal_items = [];GRLIB_arsenal_backpacks = [];};
 };
 
+if ((getPlayerUID player) in whitelist_1) then {
+	[player, arsenal_1, false] call ace_arsenal_fnc_addVirtualItems;
+	};
+
+
 if ( typeOf player == "VirtualSpectator_F" ) exitWith {
 	execVM "scripts\client\markers\empty_vehicles_marker.sqf";
 	execVM "scripts\client\markers\fob_markers.sqf";
@@ -77,13 +82,4 @@ execVM "scripts\client\ui\intro.sqf";
 
 [] execVM "onPlayerRespawn.sqf";
 
-	if ((getPlayerUID player) in arsenal_whitelist_1) then {
-			[player, whitelist_1, false] call ace_arsenal_fnc_addVirtualItems;
-		};
-
 [player] joinSilent (createGroup [GRLIB_side_friendly, true]);
-
-
-
-//butts
-//execVM "butts\butts_actions.sqf";

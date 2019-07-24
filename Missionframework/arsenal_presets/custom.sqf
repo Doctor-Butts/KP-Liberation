@@ -1,8 +1,4 @@
 // Custom Arsenal Preset
-whitelist_1 = [
-"rhs_weap_m4a1_blockII_M203",
-"SMG_03_TR_black"
-];
 
 GRLIB_arsenal_weapons = [
 "rhs_weap_m4a1_carryhandle",
@@ -159,4 +155,100 @@ GRLIB_arsenal_backpacks = [
 "B_TacticalPack_mcamo",
 "B_Parachute",
 "B_UAV_01_backpack_F"
+];
+
+// butts whitelist arsenals
+
+arsenal_1 = [
+//Helmets Uniforms Vests backpacks
+"rhs_uniform_cu_ucp",
+"rhsusf_iotv_ucp_Repair",
+"rhsusf_iotv_ucp_Rifleman",
+"rhsusf_iotv_ucp_SAW",
+"rhsusf_iotv_ucp_Squadleader",
+"rhsusf_iotv_ucp_Teamleader",
+"rhsusf_iotv_ucp_Medic",
+"rhsusf_iotv_ucp_Grenadier",
+"rhsusf_ach_helmet_headset_ucp",
+"rhsusf_ach_helmet_ucp",
+"rhs_Booniehat_ucp",
+"rhs_Booniehat_ocp",
+"rhssaf_beret_green",
+"rhsusf_ach_helmet_headset_ess_ucp",
+"B_Carryall_cbr",
+"rhsusf_assault_eagleaiii_ucp",
+
+//Weapons
+"rhs_weap_m4a1_blockII_bk",
+"rhs_weap_m4a1_blockII_M203_bk",
+"rhs_weap_sr25_ec",
+"rhs_weap_mk18",
+"rhs_weap_mk18_m320",
+"rhs_weap_m16a4_carryhandle_M203",
+"rhs_weap_m32",
+"rhs_weap_M590_8RD",
+"rhsusf_weap_glock17g4",
+
+//weapon accessories
+"rhsusf_acc_sr25s",
+"rhsusf_acc_acog",
+"rhsusf_acc_acog2",
+"rhsusf_acc_acog_anpvs27",
+"rhsusf_acc_eotech_552",
+"rhsusf_acc_su230_mrds",
+"rhsusf_acc_anpvs27",
+"rhsusf_acc_acog3_usmc",
+"rhsusf_acc_g33_t1",
+"rhsusf_acc_m2a1",
+"rhsusf_acc_leupoldmk4",
+"rhsusf_acc_leupoldmk4_2",
+"rhsusf_acc_omega9k",
+"acc_flashlight_pistol",
+
+//magazines
+"rhs_mag_30Rnd_556x45_Mk318_Stanag",
+"rhs_mag_100Rnd_556x45_M855A1_cmag",
+"rhs_mag_100Rnd_556x45_M855A1_cmag_mixed",
+"rhsusf_20Rnd_762x51_SR25_m118_special_Mag",
+"rhsusf_20Rnd_762x51_SR25_m62_Mag",
+"rhsusf_20Rnd_762x51_SR25_m993_Mag",
+"rhs_mag_m576",
+"rhs_mag_M585_white",
+"rhs_mag_m661_green",
+"rhs_mag_m662_red",
+"ACE_HuntIR_M203",
+"rhsusf_200Rnd_556x45_box",
+"rhsusf_200rnd_556x45_mixed_box",
+"rhsusf_8Rnd_00Buck",
+"rhsusf_8Rnd_FRAG",
+"rhsusf_8Rnd_HE",
+"rhsusf_8Rnd_Slug",
+"rhsusf_50Rnd_762x51_m80a1epr",
+"rhsusf_50Rnd_762x51_m62_tracer",
+"rhsusf_50Rnd_762x51_m61_ap",
+"rhsusf_20Rnd_762x51_m993_Mag",
+"rhsusf_mag_17Rnd_9x19_FMJ",
+"rhsusf_mag_17Rnd_9x19_JHP",
+
+//items
+"ACE_NVG_Gen4",
+"ACE_NVG_Wide",
+"MineDetector",
+"ACE_SpraypaintRed",
+"ACE_SpraypaintGreen",
+"ACE_HuntIR_monitor",
+"ACE_Humanitarian_Ration",
+"ACE_Can_Franta",
+"ACE_WaterBottle",
+"G_Combat",
+"G_Tactical_Clear",
+"rhsusf_oakley_goggles_clr",
+"rhsusf_shemagh_gogg_white",
+"rhsusf_shemagh_white",
+"G_Balaclava_blk"
+];
+
+arsenal_2 = arsenal_1 + [
+
+
 ];

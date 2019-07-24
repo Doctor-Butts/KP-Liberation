@@ -350,7 +350,7 @@ while {true} do {
 		};
 	};
 	
-	if (_fobdistance < _distfob && alive player && vehicle player == player && (getPlayerUID player) in KP_liberation_logistic_whitelist) then {
+	if (_fobdistance < _distfob && alive player && vehicle player == player && (getPlayerUID player) in butts_script_whitelist) then {
 		if (_bact_giveammo == -1) then {
 			_bact_giveammo = player addAction ["<t color='#000000'>give ammo crate</t>","butts\give_ammo.sqf","",-980,true,true,"","build_confirmed == 0"];
 		};
@@ -361,7 +361,7 @@ while {true} do {
 		};
 	};
 	
-	if (_fobdistance < _distfob && alive player && vehicle player == player && (getPlayerUID player) in KP_liberation_logistic_whitelist) then {
+	if (_fobdistance < _distfob && alive player && vehicle player == player && (getPlayerUID player) in butts_script_whitelist) then {
 		if (_bact_givefuel == -1) then {
 			_bact_givefuel = player addAction ["<t color='#000000'>give fuel crate</t>","butts\give_fuel.sqf","",-980,true,true,"","build_confirmed == 0"];
 		};
@@ -372,7 +372,7 @@ while {true} do {
 		};
 	};
 
-	if (_fobdistance < _distfob && alive player && vehicle player == player && (getPlayerUID player) in KP_liberation_logistic_whitelist) then {
+	if (_fobdistance < _distfob && alive player && vehicle player == player && (getPlayerUID player) in butts_script_whitelist) then {
 		if (_bact_givesupply == -1) then {
 			_bact_givesupply = player addAction ["<t color='#000000'>give supply crate</t>","butts\give_supply.sqf","",-980,true,true,"","build_confirmed == 0"];
 		};
@@ -383,7 +383,7 @@ while {true} do {
 		};
 	};
 
-	if (_fobdistance < _distfob && alive player && vehicle player == player && (getPlayerUID player) in KP_liberation_logistic_whitelist) then {
+	if (_fobdistance < _distfob && alive player && vehicle player == player && (getPlayerUID player) in butts_script_whitelist) then {
 		if (_bact_giverep == -1) then {
 			_bact_giverep = player addAction ["<t color='#000000'>give rep</t>","butts\give_rep.sqf","",-980,true,true,"","build_confirmed == 0"];
 		};
@@ -394,7 +394,7 @@ while {true} do {
 		};
 	};
 	
-	if (_fobdistance < _distfob && alive player && vehicle player == player && (getPlayerUID player) in KP_liberation_logistic_whitelist) then {
+	if (_fobdistance < _distfob && alive player && vehicle player == player && (getPlayerUID player) in butts_script_whitelist) then {
 		if (_bact_giveintel == -1) then {
 			_bact_giveintel = player addAction ["<t color='#000000'>give intel</t>","butts\give_intel.sqf","",-980,true,true,"","build_confirmed == 0"];
 		};

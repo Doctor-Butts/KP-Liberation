@@ -64,15 +64,16 @@ if (KP_liberation_arsenalUsePreset) then {
 		[missionNamespace, GRLIB_arsenal_backpacks] call BIS_fnc_addVirtualBackpackCargo;
 		KP_liberation_allowed_items append GRLIB_arsenal_backpacks;
 	};
-	
-	{
+
+//i don't see an appreciable distance between the copies of these, so why bother?
+/* 	{
 		if ((_x find "rhs_acc") == 0) then {
 			KP_liberation_allowed_items_extension append [_x + "_3d", _x + "_pip"];
 		};
 		if ((_x find "rhsusf_acc") == 0) then {
 			KP_liberation_allowed_items_extension append [_x + "_3d", _x + "_pip"];
 		};
-	} forEach KP_liberation_allowed_items;
+	} forEach KP_liberation_allowed_items; */
 	
 
 	if ((count KP_liberation_allowed_items_extension) > 0) then {
@@ -82,10 +83,6 @@ if (KP_liberation_arsenalUsePreset) then {
     if (KP_liberation_ace && KP_liberation_arsenal_type) then {
         [player, KP_liberation_allowed_items, false] call ace_arsenal_fnc_addVirtualItems;
     };
-
-	if ((getPlayerUID player) in arsenal_whitelist_1) then {
-			[player, whitelist_1, false] call ace_arsenal_fnc_addVirtualItems;
-		};
 
     // Lowercase all classnames
 	KP_liberation_allowed_items = KP_liberation_allowed_items apply {toLower _x};
@@ -100,6 +97,6 @@ if (KP_liberation_arsenalUsePreset) then {
     };
 };
 
-	if ((getPlayerUID player) in arsenal_whitelist_1) then {
-			[player, whitelist_1, false] call ace_arsenal_fnc_addVirtualItems;
-		};
+	if ((name player) in whitelist_1) then {
+			[player, arsenal_1, false] call ace_arsenal_fnc_addVirtualItems;
+		}; 

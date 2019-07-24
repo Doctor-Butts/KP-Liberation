@@ -1,5 +1,5 @@
-player setVariable ["ace_isEngineer",0, true];
-player setVariable ["ace_medical_medicClass", 0, true];
+/* player setVariable ["ace_isEngineer",0, true];
+player setVariable ["ace_medical_medicClass", 0, true]; */
 
 if ( isNil "GRLIB_respawn_loadout" ) then {
 	removeAllWeapons player;
